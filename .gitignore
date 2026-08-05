@@ -4,6 +4,7 @@
 
 # Raw clinical and waveform data
 /data/raw/
+/archive
 
 # Optional: local or generated data that should not be published
 # Uncomment these after deciding which derived results to share.

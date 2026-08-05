@@ -1,0 +1,14 @@
+# Core dependencies for reproducing the analysis from processed
+# feature-extraction outputs onward (scripts 04–12 and result figures).
+#
+# Python 3.10 or later is recommended.
+# Feature extraction in script 03 uses separate project-specific packages
+# and is not included because the documented reproducibility entry point is
+# the processed feature-extraction files.
+
+numpy>=2.0,<3.0
+pandas>=2.2,<3.0
+scipy>=1.13,<2.0
+scikit-learn>=1.5,<2.0
+matplotlib>=3.8,<4.0
+seaborn>=0.13,<1.0
