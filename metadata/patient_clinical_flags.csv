@@ -1,0 +1,21 @@
+Patient_ID,paced_or_icd,continuous_AF,intermittent_or_new_AF,any_AF,atypical_HI,major_HRV_outlier,BBB,antiarrhythmic_exposure,mechanical_support,clean_sinus_candidate,exclude_from_HRV_valid_subgroup,notes
+491,1,0,0,0,0,0,0,0,0,0,1,Permanent pacemaker/ICD-related pacing concern; HRV not intrinsic.
+638,1,1,0,1,0,0,1,1,0,0,1,Permanent pacemaker with continuous AF; paced LBBB morphology; antiarrhythmic/digoxin exposure.
+906,0,0,0,0,0,1,0,0,0,0,1,Major HRV outlier; HRV_MeanNN extreme values likely artifact or severe arrhythmia.
+1049,1,0,1,1,0,0,0,1,0,0,1,Temporary transvenous pacemaker after PEA arrest; chronic AF/flutter; sotalol exposure.
+1855,0,0,0,0,0,0,0,0,1,0,0,Sinus rhythm but ECMO/mechanical support exposure; scattered HRV outlier segments noted.
+8452,0,0,0,0,0,0,0,0,0,1,0,Clean sinus candidate; ischemic cardiomyopathy with ESRD/electrolyte lability.
+10013,0,0,1,1,0,0,0,0,0,0,0,Rapid AF/intermittent AF; preserved EF with sepsis/pneumonia context.
+26398,0,1,0,1,0,0,0,1,0,0,1,Continuous AF with RVR; amiodarone exposure.
+26502,0,0,1,1,0,0,0,0,0,0,0,New-onset AF during admission; severe ischemic cardiomyopathy.
+27245,1,0,0,0,0,0,1,0,0,0,1,ICD implanted; LBBB on admission; low early PreHI signal-energy concern.
+30071,0,0,0,0,0,0,0,0,0,1,0,Clean sinus candidate; post-CABG cardiogenic shock context.
+30851,1,0,0,0,0,0,1,1,0,0,1,Temporary pacemaker after asystole; new LBBB; amiodarone exposure; QRS_std zero segments.
+57091,0,0,0,0,1,0,0,0,0,0,0,Atypical HI etiology; respiratory failure/IPF with non-cardiogenic mechanism.
+59285,0,0,0,0,1,0,0,0,0,0,0,Atypical HI etiology; hepatic failure/hepatorenal physiology.
+70447,0,0,0,0,1,0,0,0,0,0,0,Atypical HI etiology; aspiration pneumonia/acute cor pulmonale; one near-zero signal-energy segment.
+80436,0,0,0,0,0,0,0,0,0,1,0,Clean sinus candidate; recent NSTEMI with severe ischemic MR/LVH.
+88503,0,0,0,0,0,0,0,0,1,1,0,Clean sinus candidate; post-infarct VSD repair with Tandem/ECMO support during acute phase.
+90396,0,1,0,1,0,0,0,0,0,0,1,Continuous AF throughout segments; systematic HRV outlier pattern explained by AF.
+96305,0,0,0,0,0,0,0,1,0,0,0,Post-VF arrest; lidocaine drip and therapeutic hypothermia exposure.
+96879,0,0,0,0,0,0,1,0,1,0,0,RBBB; ECMO/Tandem support; severe biventricular failure.

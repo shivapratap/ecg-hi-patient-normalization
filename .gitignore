@@ -1,0 +1,120 @@
+# ============================================================
+# Project data
+# ============================================================
+
+# Raw clinical and waveform data
+/data/raw/
+
+# Optional: local or generated data that should not be published
+# Uncomment these after deciding which derived results to share.
+/data/processed/
+/data/processed/windows
+# /data/modelling/
+/data/normalization/
+/data/quality/
+#/data/results/
+
+
+# ============================================================
+# Python
+# ============================================================
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Shared libraries
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type-checking and linting caches
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Python logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# IDE and operating-system files
+# ============================================================
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+
+# ============================================================
+# Secrets and local configuration
+# ============================================================
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json

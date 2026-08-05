@@ -1,0 +1,2 @@
+total_rows,patient_count,Class_0_count,Class_1_count,usable_count,review_count,predictor_count,missing_feature_value_count,infinite_feature_value_count,constant_feature_count,near_constant_feature_count,exact_duplicate_pair_count,sign_inverted_duplicate_pair_count,high_correlation_pair_count,patients_missing_either_class
+1283,20,585,698,887,396,48,0,0,1,2,1,0,32,0

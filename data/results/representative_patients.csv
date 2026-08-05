@@ -1,0 +1,4 @@
+patient_id,representative_category,jackknife_roc_auc,review_window_fraction,calibration_iqr_roc_auc,common_evaluation_windows
+906,high,1.0,0.27586206896551724,0.7401785714285714,48
+26502,median,0.9528130671506352,0.0,0.8607078039927405,77
+30851,low,0.2978260869565218,0.9622641509433962,0.4434782608695652,43

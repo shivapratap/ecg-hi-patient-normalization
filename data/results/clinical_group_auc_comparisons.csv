@@ -1,0 +1,1 @@
+variable_name,outcome_name,analysis_status,group_1,group_2,group_1_count,group_2_count,group_1_median,group_2_median,median_difference_group_1_minus_group_2,group_1_iqr,group_2_iqr,mann_whitney_u_p_value,rank_biserial_effect_size,group_count,kruskal_wallis_p_value

@@ -1,0 +1,25 @@
+source_file,original_variable_name,cleaned_variable_name,variable_type,non_missing_count,missing_count,unique_value_count,analysis_eligible,reason_if_not_eligible
+patient_clinical_summary.csv,Patient_ID,patient_id,identifier,20,0,20,False,identifier
+patient_clinical_summary.csv,Age,summary_Age,continuous,20,0,16,True,
+patient_clinical_summary.csv,Sex,summary_Sex,categorical,20,0,2,True,
+patient_clinical_summary.csv,Primary_Diagnosis,summary_Primary_Diagnosis,free_text,20,0,20,False,"narrative field; preserved for context, not subgroup testing"
+patient_clinical_summary.csv,EF,summary_EF,continuous_text,20,0,20,True,
+patient_clinical_summary.csv,Rhythm_Device,summary_Rhythm_Device,free_text,20,0,18,False,"narrative field; preserved for context, not subgroup testing"
+patient_clinical_summary.csv,Key_ECG_Flags,summary_Key_ECG_Flags,free_text,20,0,20,False,"narrative field; preserved for context, not subgroup testing"
+patient_clinical_summary.csv,Antiarrhythmics_Rate_Drugs,summary_Antiarrhythmics_Rate_Drugs,free_text,20,0,20,False,"narrative field; preserved for context, not subgroup testing"
+patient_clinical_summary.csv,Outcome,summary_Outcome,categorical,20,0,3,True,
+patient_clinical_summary.csv,Category_Flags,summary_Category_Flags,free_text,20,0,20,False,"narrative field; preserved for context, not subgroup testing"
+patient_clinical_flags.csv,Patient_ID,patient_id,identifier,20,0,20,False,identifier
+patient_clinical_flags.csv,paced_or_icd,flag_paced_or_icd,binary,20,0,2,True,
+patient_clinical_flags.csv,continuous_AF,flag_continuous_AF,binary,20,0,2,True,
+patient_clinical_flags.csv,intermittent_or_new_AF,flag_intermittent_or_new_AF,binary,20,0,2,True,
+patient_clinical_flags.csv,any_AF,flag_any_AF,binary,20,0,2,True,
+patient_clinical_flags.csv,atypical_HI,flag_atypical_HI,binary,20,0,2,True,
+patient_clinical_flags.csv,major_HRV_outlier,flag_major_HRV_outlier,binary,20,0,2,True,
+patient_clinical_flags.csv,BBB,flag_BBB,binary,20,0,2,True,
+patient_clinical_flags.csv,antiarrhythmic_exposure,flag_antiarrhythmic_exposure,binary,20,0,2,True,
+patient_clinical_flags.csv,mechanical_support,flag_mechanical_support,binary,20,0,2,True,
+patient_clinical_flags.csv,clean_sinus_candidate,flag_clean_sinus_candidate,binary,20,0,2,True,
+patient_clinical_flags.csv,exclude_from_HRV_valid_subgroup,flag_exclude_from_HRV_valid_subgroup,binary,20,0,2,True,
+patient_clinical_flags.csv,notes,flag_notes,free_text,20,0,20,False,"narrative field; preserved for context, not subgroup testing"
+patient_clinical_summary.csv,EF_numeric_midpoint,summary_EF_numeric_midpoint,continuous_derived,15,5,13,True,explicitly parsed midpoint; original EF remains unchanged

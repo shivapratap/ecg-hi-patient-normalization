@@ -1,0 +1,17 @@
+variable_name,perfect_count,nonperfect_count,analysis_eligible,perfect_median,nonperfect_median,median_difference_perfect_minus_nonperfect,mann_whitney_u_statistic,raw_p_value,rank_biserial_effect_size,perfect_positive_count,nonperfect_positive_count,exploratory_fdr_q_value
+review_window_fraction,7,13,True,0.3,0.081967213114754,0.218032786885246,58.0,0.34146615931585256,0.27472527472527464,,,0.34146615931585256
+jackknife_probability_median_difference,7,13,True,0.623,0.162,0.46099999999999997,80.0,0.004669762641898865,0.7582417582417582,,,0.015813216771442196
+jackknife_probability_overlap_measure,7,13,True,0.0,0.0344827586206896,-0.0344827586206896,17.5,0.013908303201817789,-0.6153846153846154,,,0.01788923022112853
+median_absolute_cliffs_delta,7,13,True,1.0,0.580952380952381,0.419047619047619,80.0,0.006325286708576878,0.7582417582417582,,,0.015813216771442196
+large_effect_feature_count,7,13,True,10.0,7.0,3.0,76.5,0.014311384176902824,0.6813186813186813,,,0.01788923022112853
+flag_paced_or_icd,7,13,True,,,,,,,0.0,5.0,
+flag_continuous_AF,7,13,True,,,,,,,1.0,2.0,
+flag_intermittent_or_new_AF,7,13,True,,,,,,,1.0,2.0,
+flag_any_AF,7,13,True,,,,,,,2.0,4.0,
+flag_atypical_HI,7,13,True,,,,,,,0.0,3.0,
+flag_major_HRV_outlier,7,13,True,,,,,,,1.0,0.0,
+flag_BBB,7,13,True,,,,,,,1.0,3.0,
+flag_antiarrhythmic_exposure,7,13,True,,,,,,,0.0,5.0,
+flag_mechanical_support,7,13,True,,,,,,,2.0,1.0,
+flag_clean_sinus_candidate,7,13,True,,,,,,,3.0,1.0,
+flag_exclude_from_HRV_valid_subgroup,7,13,True,,,,,,,2.0,6.0,

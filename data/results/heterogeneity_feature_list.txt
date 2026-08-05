@@ -1,0 +1,11 @@
+kurtosis
+skewness
+mean_absolute_value
+waveform_length
+slope_sign_change_count
+approximate_entropy
+fuzzy_entropy
+median_frequency
+spectral_entropy
+MedianSampEn
+AUC_SampEn

@@ -1,0 +1,36 @@
+Draft figure captions (verify every number against the frozen CSV files).
+
+Fig. 4. Discrimination of pre-haemodynamic-instability versus haemodynamic-
+instability windows under four patient-level normalisation strategies.
+(a) Pooled out-of-fold ROC AUC, average precision and balanced accuracy for the
+primary configuration (common-row evaluation, Extra Trees, 20 leave-one-subject-
+out folds). (b) Distribution of per-patient ROC AUC (violin: kernel density;
+box: median and interquartile range; points: individual held-out patients,
+n = 20); white diamonds mark the corresponding pooled ROC AUC, which is lower
+than the median patient AUC because prediction-score distributions remain
+heterogeneous across patients. (c) Pooled ROC AUC for all three classifiers,
+showing that the ordering of normalisation strategies is not classifier
+specific. Dashed lines indicate chance (0.50). Jackknife normalisation is a
+retrospective upper-bound reference and is not deployable.
+
+Fig. 5. Reproducibility of feature selection across leave-one-subject-out
+folds (common-row evaluation, Extra Trees). (a) Frequency with which each
+frozen predictor survived the training-only selection pipeline in the 20 outer
+folds, ranked by mean frequency across strategies; the dashed line marks the
+0.75 (15/20 folds) descriptive stability threshold. (b) Mean pairwise Jaccard
+similarity between the retained feature sets of different folds (whiskers:
+minimum and maximum over all fold pairs). Stable features are reproducible
+selections, not validated biomarkers.
+
+Fig. 6. Patient-level heterogeneity in discrimination. (a) Per-patient ROC AUC
+for the retrospective jackknife reference and the deployable calibration
+median-IQR strategy, ranked by jackknife AUC; shaded rows and red labels mark
+the two below-chance patients, and the dagger marks patients for whom a later
+continuous calibration block was required. (b) Agreement between the two
+strategies, coloured by QC-review window fraction; the dashed line is the line
+of identity. (c) Per-patient ROC AUC against QC-review burden, showing that
+signal-quality burden alone does not separate successful from unsuccessful
+patients. Dashed lines indicate chance (0.50).
+
+Fig. S1. Supplementary heat-map rendering of the selection frequencies shown in
+Fig. 5(a).

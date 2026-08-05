@@ -1,0 +1,9 @@
+variable_name,outcome_name,patient_count,spearman_rho,raw_p_value,exploratory_fdr_q_value,missing_count,coverage_flag
+summary_Age,jackknife_roc_auc,20,-0.004616307969323109,0.9845894679668808,0.9845894679668808,0,adequate_coverage
+summary_Age,calibration_iqr_roc_auc,20,-0.08050925602233397,0.7358053001909614,0.7358053001909614,0,adequate_coverage
+summary_Age,auc_difference_jackknife_minus_calibration,20,0.1775450005252057,0.4539414659997577,0.6984367341296598,0,adequate_coverage
+summary_Age,review_window_fraction,20,-0.1532957664118327,0.5187664680991224,0.5187664680991224,0,adequate_coverage
+summary_EF_numeric_midpoint,jackknife_roc_auc,15,0.17488688954238749,0.5330171929406616,0.9845894679668808,5,adequate_coverage
+summary_EF_numeric_midpoint,calibration_iqr_roc_auc,15,0.2769042417754468,0.317735018282437,0.635470036564874,5,adequate_coverage
+summary_EF_numeric_midpoint,auc_difference_jackknife_minus_calibration,15,-0.10920862281656628,0.6984367341296598,0.6984367341296598,5,adequate_coverage
+summary_EF_numeric_midpoint,review_window_fraction,15,0.3917716465512463,0.14868841577813774,0.2973768315562755,5,adequate_coverage
