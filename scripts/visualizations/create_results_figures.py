@@ -48,7 +48,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from matplotlib.lines import Line2D
-from matplotlib.patches import Patch
+
 
 # -----------------------------------------------------------------------------
 # Frozen analysis configuration
@@ -408,7 +408,7 @@ def create_figure_4(pooled: pd.DataFrame, patient: pd.DataFrame, output_dir: Pat
     ax_a.set_yticks(np.arange(0.0, 1.01, 0.2))
     ax_a.set_ylabel("Pooled out-of-fold performance")
     ax_a.set_title(
-        "Pooled discrimination by patient-level normalisation "
+        "Pooled discrimination by patient-reference strategy"
         "(common rows, Extra Trees, 20 LOSO folds)"
     )
     style_axis(ax_a, axis="y")
@@ -419,7 +419,7 @@ def create_figure_4(pooled: pd.DataFrame, patient: pd.DataFrame, output_dir: Pat
         bbox_to_anchor=(0.5, -0.13),
         ncol=5,
         frameon=False,
-        title="Patient-level normalisation strategy",
+        title="Patient-reference strategy",
     )
     add_panel_label(ax_a, "a", x=-0.055, y=1.14)
 
@@ -653,7 +653,7 @@ def create_figure_5(
     _feature_bar_panel(ax_b, pivot.iloc[split:], labels[split:])
     ax_a.set_title(f"Selection frequency, ranks 1\u2013{split}")
     ax_b.set_title(f"Selection frequency, ranks {split + 1}\u2013{n_features}")
-    ax_a.set_ylabel("Frozen predictor (ranked by mean selection frequency)")
+    ax_a.set_ylabel("Candidate feature (ranked by mean selection frequency)")
     add_panel_label(ax_a, "a", x=-0.66, y=1.05)
     add_panel_label(ax_b, "b", x=-0.50, y=1.05)
 
@@ -729,7 +729,7 @@ def create_figure_5(
         ax=ax_h,
     )
     ax_h.set_xlabel("")
-    ax_h.set_ylabel("Frozen predictor")
+    ax_h.set_ylabel("Candidate feature")
     ax_h.set_title("Selection frequency across 20 LOSO folds")
     ax_h.tick_params(axis="x", rotation=0, labelsize=6.6, length=0)
     ax_h.tick_params(axis="y", rotation=0, labelsize=6.6, length=0)
@@ -767,7 +767,7 @@ def create_figure_6(heterogeneity: pd.DataFrame, output_dir: Path) -> None:
         y - bar_h / 2, frame["calibration_iqr_roc_auc"], height=bar_h * 0.95,
         color=COLORS["calibration_median_iqr"], edgecolor="#2B2B2B", linewidth=0.4,
         hatch=HATCHES["calibration_median_iqr"],
-        label="Calibration median\u2013IQR (deployable)", zorder=3,
+        label="Calibration median\u2013IQR", zorder=3,
     )
 
     below = frame["jackknife_roc_auc"] < 0.5
@@ -898,7 +898,7 @@ retrospective upper-bound reference and is not deployable.
 
 Fig. 5. Reproducibility of feature selection across leave-one-subject-out
 folds (common-row evaluation, Extra Trees). (a) Frequency with which each
-frozen predictor survived the training-only selection pipeline in the 20 outer
+Candidate feature survived the training-only selection pipeline in the 20 outer
 folds, ranked by mean frequency across strategies; the dashed line marks the
 0.75 (15/20 folds) descriptive stability threshold. (b) Mean pairwise Jaccard
 similarity between the retained feature sets of different folds (whiskers:

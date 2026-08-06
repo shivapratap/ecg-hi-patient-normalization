@@ -15,7 +15,7 @@ retrospective upper-bound reference and is not deployable.
 
 Fig. 5. Reproducibility of feature selection across leave-one-subject-out
 folds (common-row evaluation, Extra Trees). (a) Frequency with which each
-frozen predictor survived the training-only selection pipeline in the 20 outer
+Candidate feature survived the training-only selection pipeline in the 20 outer
 folds, ranked by mean frequency across strategies; the dashed line marks the
 0.75 (15/20 folds) descriptive stability threshold. (b) Mean pairwise Jaccard
 similarity between the retained feature sets of different folds (whiskers:
